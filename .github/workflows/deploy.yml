@@ -1,12 +1,10 @@
 name: Deploy Vite App to GitHub Pages
 
 permissions:
-  contents: write   # <-- REQUIRED
+  contents: write   # allow the workflow to read/write repo contents
 
 on:
-  workflow_dispatch:   # Manual run only
-    branches:
-      - main
+  workflow_dispatch: {}   # manual trigger (Run workflow button)
 
 jobs:
   build:
@@ -16,37 +14,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
 
-      - name: Upload Artifact
+      - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
-    runs-on: ubuntu-latest
-    
+
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-    - name: Print final URL
-      run: echo "Your site is live at: ${{ steps.deployment.outputs.page_url }}"
+      - name: Print final URL
+        run: |
+          echo "Your site is live at: ${{ steps.deployment.outputs.page_url }}"
