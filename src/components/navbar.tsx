@@ -1,12 +1,12 @@
-import profileImg from "../assets/profile.jpg";
-import NavItem from "./navItem";
 import {
-	UserIcon,
 	BriefcaseIcon,
 	CodeBracketIcon,
-	SparklesIcon,
 	PencilIcon,
+	SparklesIcon,
+	UserIcon,
 } from "@heroicons/react/24/outline";
+import profileImg from "../assets/profile.jpg";
+import NavItem from "./nav_item";
 
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
