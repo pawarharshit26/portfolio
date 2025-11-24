@@ -1,5 +1,6 @@
 import AboutSection from "./components/about";
 import Navbar from "./components/navbar";
+import SkillsSection from "./components/skills";
 
 function App() {
 	return (
@@ -9,9 +10,7 @@ function App() {
 			{/* Your sections */}
 			<AboutSection />
 
-			<section id="skills" className="h-screen p-20">
-				<h1 className="text-4xl font-bold">Skills Section</h1>
-			</section>
+			<SkillsSection />
 
 			<section id="experience" className="h-screen p-20">
 				<h1 className="text-4xl font-bold">Experience Section</h1>

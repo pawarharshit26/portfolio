@@ -13,7 +13,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, children, Icon }) => {
 	return (
 		<a
 			href={href}
-			className="flex items-center gap-2 text-sm text-white/80 hover:text-white rounded-xl px-6 py-2 hover:bg-sky-500/10 transition-all duration-200"
+			className="flex items-center gap-2 text-sm text-white/80 hover:text-white rounded-xl px-6 py-2 border border-transparent hover:border-white/30 hover:bg-sky-500/10 transition-all duration-200"
 			onClick={(e) => {
 				e.preventDefault();
 				const target = document.querySelector(href);
