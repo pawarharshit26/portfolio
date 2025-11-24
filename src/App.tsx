@@ -1,3 +1,4 @@
+import AboutSection from "./components/about";
 import Navbar from "./components/navbar";
 
 function App() {
@@ -6,9 +7,7 @@ function App() {
 			<Navbar />
 
 			{/* Your sections */}
-			<section id="about" className="h-screen p-20">
-				<h1 className="text-4xl font-bold">About Section</h1>
-			</section>
+			<AboutSection />
 
 			<section id="skills" className="h-screen p-20">
 				<h1 className="text-4xl font-bold">Skills Section</h1>

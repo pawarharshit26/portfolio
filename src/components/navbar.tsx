@@ -61,13 +61,15 @@ export default function Navbar() {
 						</li>
 					</ul>
 
-					{/* RIGHT — Contact Button (Rounded bluish icon) */}
-					<a
-						href="#contact"
-						className="w-10 h-10 flex items-center justify-center rounded-full  bg-blue-500 hover:bg-blue-400 transition-colors duration-200 cursor-pointer"
-					>
-						<EnvelopeIcon className="w-5 h-5 text-black" />
-					</a>
+					{/* RIGHT — Contact Button */}
+					<div className="flex items-center gap-4">
+						<a
+							href="mailto:contact@harshit.com"
+							className="group w-12 h-12 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 hover:bg-sky-500/10 transition-all duration-300 cursor-pointer"
+						>
+							<EnvelopeIcon className="w-5 h-5 text-white/70 group-hover:text-sky-400 group-hover:rotate-12 transition-all duration-300 origin-top-right" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</nav>
