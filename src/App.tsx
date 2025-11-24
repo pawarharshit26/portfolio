@@ -2,7 +2,7 @@ import Navbar from "./components/navbar";
 
 function App() {
 	return (
-		<div className="min-h-screen w-full bg-black text-white">
+		<div className="min-h-screen w-full bg-black text-white scroll-smooth">
 			<Navbar />
 
 			{/* Your sections */}
