@@ -1,9 +1,9 @@
 import {
-	CircleStackIcon,
-	CodeBracketIcon,
-	CpuChipIcon,
-	PaintBrushIcon,
-	WrenchScrewdriverIcon
+    CircleStackIcon,
+    CodeBracketIcon,
+    CpuChipIcon,
+    PaintBrushIcon,
+    WrenchScrewdriverIcon
 } from "@heroicons/react/24/outline";
 
 const skills = [
@@ -36,12 +36,7 @@ const skills = [
         name: "Architecture & Design",
         icon: <PaintBrushIcon className="w-10 h-10" />,
         list: ["Clean Architecture", "SOLID Principles", "Microservices", "Dependency Injection", "TDD", "Third-party API Integration"],
-    },
-	{
-		name: "Third party integrations",
-		icon: <PaintBrushIcon className="w-10 h-10" />,
-		list: ["Twilio", "Razorpay", "Google Cloud TTS"],
-	}
+    }
 ];
 
 const SkillsSection = () => {
@@ -54,15 +49,29 @@ const SkillsSection = () => {
 				{skills.map((skill) => (
 					<div
 						key={skill.name}
-						className="bg-gray-800 p-6 rounded-lg flex flex-col items-center"
+						className="group relative bg-gradient-to-br from-gray-800/50 via-gray-900/50 to-black/50 backdrop-blur-lg rounded-2xl p-8 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/20 flex flex-col items-center"
 					>
-						<div className="text-blue-500">{skill.icon}</div>
-						<h2 className="text-2xl font-bold mt-4">{skill.name}</h2>
-						<ul className="mt-4 text-center">
-							{skill.list.map((item) => (
-								<li key={item}>{item}</li>
-							))}
-						</ul>
+						{/* Glassmorphism overlay */}
+						<div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-sky-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+						<div className="relative z-10 flex flex-col items-center w-full">
+							<div className="text-blue-500 transform group-hover:scale-110 transition-transform duration-300 mb-4">
+								{skill.icon}
+							</div>
+							<h2 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300 mb-6">
+								{skill.name}
+							</h2>
+							<div className="w-full flex flex-wrap justify-center gap-2">
+								{skill.list.map((item) => (
+									<span
+										key={item}
+										className="px-3 py-1 text-sm text-gray-400 bg-gray-800/50 rounded-full border border-gray-700/50 group-hover:text-gray-200 group-hover:border-blue-500/30 group-hover:bg-blue-500/10 transition-all duration-300"
+									>
+										{item}
+									</span>
+								))}
+							</div>
+						</div>
 					</div>
 				))}
 			</div>

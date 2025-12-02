@@ -1,4 +1,5 @@
 import AboutSection from "./components/about";
+import ExperienceSection from "./components/experience";
 import Navbar from "./components/navbar";
 import SkillsSection from "./components/skills";
 
@@ -12,9 +13,7 @@ function App() {
 
 			<SkillsSection />
 
-			<section id="experience" className="h-screen p-20">
-				<h1 className="text-4xl font-bold">Experience Section</h1>
-			</section>
+			<ExperienceSection />
 
 			<section id="projects" className="h-screen p-20">
 				<h1 className="text-4xl font-bold">Projects Section</h1>
