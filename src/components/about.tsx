@@ -1,4 +1,5 @@
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { ArrowDownTrayIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import resume from "../assets/harshit_resume.pdf";
 
 const AboutSection = () => {
 	return (
@@ -37,6 +38,18 @@ const AboutSection = () => {
 
 				{/* Social Icons */}
 				<div className="mt-14 flex items-center justify-center gap-6">
+					{/* Resume */}
+					<a
+						href={resume}
+						download="Harshit_Resume.pdf"
+						className="group px-6 h-14 flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/5 hover:bg-sky-500/10 transition-all duration-300 cursor-pointer"
+					>
+						<span className="text-white/70 font-medium group-hover:text-sky-400 transition-colors duration-300">
+							Download Resume
+						</span>
+						<ArrowDownTrayIcon className="w-5 h-5 text-white/70 group-hover:text-sky-400 group-hover:-translate-y-1 transition-all duration-300" />
+					</a>
+
 					{/* GitHub */}
 					<a
 						href="https://github.com/pawarharshit26"

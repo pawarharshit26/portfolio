@@ -1,5 +1,6 @@
 import AboutSection from "./components/about";
 import ExperienceSection from "./components/experience";
+import FooterSection from "./components/footer";
 import Navbar from "./components/navbar";
 import SkillsSection from "./components/skills";
 
@@ -26,6 +27,8 @@ function App() {
 			<section id="contact" className="h-screen p-20">
 				<h1 className="text-4xl font-bold">Contact Section</h1>
 			</section>
+
+			<FooterSection />
 		</div>
 	);
 }
