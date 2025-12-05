@@ -1,9 +1,7 @@
 import {
 	BriefcaseIcon,
 	CodeBracketIcon,
-	PencilIcon,
-	SparklesIcon,
-	UserIcon,
+	UserIcon
 } from "@heroicons/react/24/outline";
 import profileImg from "../assets/profile.jpg";
 import NavItem from "./nav_item";
@@ -49,7 +47,7 @@ export default function Navbar() {
 								Experience
 							</NavItem>
 						</li>
-						<li>
+						{/* <li>
 							<NavItem href="#projects" Icon={SparklesIcon}>
 								Projects
 							</NavItem>
@@ -58,7 +56,7 @@ export default function Navbar() {
 							<NavItem href="#blogs" Icon={PencilIcon}>
 								Blogs
 							</NavItem>
-						</li>
+						</li> */}
 					</ul>
 
 					{/* RIGHT — Contact Button */}

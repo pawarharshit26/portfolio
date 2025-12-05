@@ -16,7 +16,7 @@ function App() {
 
 			<ExperienceSection />
 
-			<section id="projects" className="h-screen p-20">
+			{/* <section id="projects" className="h-screen p-20">
 				<h1 className="text-4xl font-bold">Projects Section</h1>
 			</section>
 
@@ -26,7 +26,7 @@ function App() {
 
 			<section id="contact" className="h-screen p-20">
 				<h1 className="text-4xl font-bold">Contact Section</h1>
-			</section>
+			</section> */}
 
 			<FooterSection />
 		</div>
