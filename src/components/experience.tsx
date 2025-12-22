@@ -9,6 +9,7 @@ const experiences = [
 		location: "Greater Noida",
 		position: "Senior Backend Developer",
 		details: [
+			"Built a real-time call campaign dashboard service processing ~250K call status events/day across ~50K calls, persisting state changes in the database and streaming live updates to the UI using Server-Sent Events (SSE), enabling instant failure detection, real-time call tracking, and accurate campaign progress calculation.",
 			"Integrate google text to speech api for audio generation in voice bot",
 			"Developed the client onboarding flow",
 			"Apply the best practices for code quality and maintainability",
