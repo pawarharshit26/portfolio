@@ -5,7 +5,7 @@ import { BriefcaseIcon } from "@heroicons/react/24/outline";
 const experiences = [
 	{
 		period: "Nov 2025 - Present",
-		company: "Thotnr (Client: Creditas)",
+		company: "Creditas (via Thotnr)",
 		location: "Greater Noida",
 		position: "Senior Backend Developer",
 		details: [
