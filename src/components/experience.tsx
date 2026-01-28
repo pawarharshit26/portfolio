@@ -16,18 +16,18 @@ const experiences = [
 		],
 		technologies: "Django, Django Channels, Websockets, Celery, Mysql, FastAPI, Google Cloud",
 	},
-	{
-		period: "Apr 2025 - Aug 2025",
-		company: "Prashant Adwait Foundation",
-		location: "Greater Noida",
-		position: "Senior Backend Developer",
-		details: [
-			"Developed a Follow-up Management System that streamlined outreach operations by enabling efficient call logging and automated follow-up scheduling, resulting in measurable increase in operational efficiency",
-			"Integrated Razorpay API to fully automate refund workflows after subscription cancellations, eliminating manual refund tasks and saving measurable bandwidth of the finance team",
-			"Engineered a post tagging system using OpenAI APIs that intelligently categorized thousands of posts, improving search precision and content recommendations",
-		],
-		technologies: "Go, Gin, Couchbase, Clean Architecture, Dependency Injection, SOLID principles,",
-	},
+	// {
+	// 	period: "Apr 2025 - Aug 2025",
+	// 	company: "Prashant Adwait Foundation",
+	// 	location: "Greater Noida",
+	// 	position: "Senior Backend Developer",
+	// 	details: [
+	// 		"Developed a Follow-up Management System that streamlined outreach operations by enabling efficient call logging and automated follow-up scheduling, resulting in measurable increase in operational efficiency",
+	// 		"Integrated Razorpay API to fully automate refund workflows after subscription cancellations, eliminating manual refund tasks and saving measurable bandwidth of the finance team",
+	// 		"Engineered a post tagging system using OpenAI APIs that intelligently categorized thousands of posts, improving search precision and content recommendations",
+	// 	],
+	// 	technologies: "Go, Gin, Couchbase, Clean Architecture, Dependency Injection, SOLID principles,",
+	// },
 	{
 		period: "Sep 2022 - Mar 2025",
 		company: "RDash",
