@@ -5,7 +5,7 @@ import { BriefcaseIcon } from "@heroicons/react/24/outline";
 const experiences = [
 	{
 		period: "Nov 2025 - Present",
-		company: "Creditas (via Thotnr)",
+		company: "Thotnr",
 		location: "Greater Noida",
 		position: "Senior Backend Developer",
 		details: [
@@ -14,7 +14,7 @@ const experiences = [
 			"Developed the client onboarding flow",
 			"Apply the best practices for code quality and maintainability",
 		],
-		technologies: "Django, Django Channels, Websockets, Celery, Mysql, FastAPI, Google Cloud",
+		technologies: "Python, Django, FastAPI, Pipecat, Websockets, Celery, MySQL, AWS",
 	},
 	// {
 	// 	period: "Apr 2025 - Aug 2025",
@@ -29,7 +29,7 @@ const experiences = [
 	// 	technologies: "Go, Gin, Couchbase, Clean Architecture, Dependency Injection, SOLID principles,",
 	// },
 	{
-		period: "Sep 2022 - Mar 2025",
+		period: "Sep 2022 - Apr 2025",
 		company: "RDash",
 		location: "Gurugram",
 		position: "Backend Developer I -> II",
